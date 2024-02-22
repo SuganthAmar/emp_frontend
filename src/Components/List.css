@@ -1,0 +1,32 @@
+/* List.css */
+
+.list-container {
+    padding: 20px;
+  }
+  
+  .employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #0b0b0b;
+  }
+  
+  .employee-table th,
+  .employee-table td {
+    padding: 10px;
+    border-bottom: 1px solid #fdb100;
+  }
+  
+  .employee-table th {
+    background-color: #ad782e;
+    text-align: left;
+    
+  }
+  
+  .employee-table tbody tr:hover {
+    background-color: #eaeaea;
+  }
+  .btn{
+    margin-top: 10px;
+    border: 2px solid rgb(255, 145, 0);
+  }
