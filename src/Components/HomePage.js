@@ -1,8 +1,6 @@
-// Home.js
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Home.css'; // Import CSS file for styling
+import './Home.css';
 import Image1 from './worker.jpg';
 
 const HomePage = () => {
@@ -15,8 +13,8 @@ const HomePage = () => {
         <div className="caption">Manage Your Workforce Efficiently</div>
       </div>
       <div className="button-container">
-        <Link to="/add" className="btn btn-primary">Add Employee</Link>
-        <Link to="/list" className="btn btn-secondary">List Employees</Link>
+        <Link to="/admin-login" className="btn btn-primary">Admin Login</Link>
+        <Link to="/employee-login" className="btn btn-secondary">Employee Login</Link>
       </div>
     </div>
   );
