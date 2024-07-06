@@ -18,7 +18,7 @@ const EmployeeLogin = () => {
   };
 
   const handleEmployeeLogin = () => {
-    axios.post('http://localhost:5001/api/employee/login', {
+    axios.post('https://emp-backend-vl2r.onrender.com/api/employee/login', {
       employeeId: employeeId,
       dob: dob,
     })

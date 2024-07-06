@@ -10,7 +10,7 @@ const EmployeeDashboard = () => {
   useEffect(() => {
     const fetchAssignedTasks = async () => {
       try {
-        const response = await axios.get(`http://localhost:5001/api/assigned-tasks/${employeeId}`);
+        const response = await axios.get(`https://emp-backend-vl2r.onrender.com/api/assigned-tasks/${employeeId}`);
         setTasks(response.data);
         setLoading(false);
       } catch (error) {
@@ -23,7 +23,7 @@ const EmployeeDashboard = () => {
 
   const handleTaskCompletion = async (taskId) => {
     try {
-      await axios.put(`http://localhost:5001/api/complete-task/${taskId}`);
+      await axios.put(`https://emp-backend-vl2r.onrender.com/api/complete-task/${taskId}`);
       // Update the tasks array to reflect the completion
       setTasks(tasks.map(task => {
         if (task.id === taskId) {

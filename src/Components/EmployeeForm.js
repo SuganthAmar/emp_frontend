@@ -62,7 +62,7 @@ const EmployeeForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5001/api/employees', formData);
+      await axios.post('https://emp-backend-vl2r.onrender.com/api/employees', formData);
       alert('Employee added successfully!');
     } catch (error) {
       alert('Failed to add employee. Please try again.');

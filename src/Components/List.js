@@ -23,7 +23,7 @@ const List = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:5001/api/select?page=${currentPage}&pageSize=${pageSize}`, { params: filters });
+        const response = await axios.get(`https://emp-backend-vl2r.onrender.com/api/select?page=${currentPage}&pageSize=${pageSize}`, { params: filters });
         setEmps(response.data.employees);
         setTotalPages(Math.ceil(response.data.totalCount / pageSize));
       } catch (err) {

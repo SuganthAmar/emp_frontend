@@ -10,7 +10,7 @@ const EmployeeProgress = () => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const response = await axios.get(`http://localhost:5001/api/assigned-tasks/${employeeId}`);
+        const response = await axios.get(`https://emp-backend-vl2r.onrender.com/api/assigned-tasks/${employeeId}`);
         setTasks(response.data);
         setLoading(false);
       } catch (error) {

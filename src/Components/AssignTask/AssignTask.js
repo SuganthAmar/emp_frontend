@@ -11,7 +11,7 @@ const AssignPage = () => {
   useEffect(() => {
     const fetchEmployeeDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5001/api/employee/${employeeId}`);
+        const response = await axios.get(`https://emp-backend-vl2r.onrender.com/api/employee/${employeeId}`);
         setEmployee(response.data);
         setLoading(false);
       } catch (error) {
@@ -25,7 +25,7 @@ const AssignPage = () => {
   const handleTaskAssignment = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`http://localhost:5001/api/assign-task`, {
+      await axios.post(`https://emp-backend-vl2r.onrender.com/api/assign-task`, {
         employeeId,
         description: taskDescription,
       });
